@@ -86,9 +86,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasScore -->
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasResult -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasScore">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasResult">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
