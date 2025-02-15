@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26/"
+     xml:base="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#assessesIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#assessesIndicator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasGranularity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasGranularity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentGranularity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasLabel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasLabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#produceResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#produceResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#useMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#useMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#useMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#useMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#FormulaBasedMethod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Metric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#labelThreshold -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#labelThreshold">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#metricFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#metricFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AccuracyResultSO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AccuracyResultSO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AccuracyResultUO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AccuracyResultUO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentGranularity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentGranularity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Bad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Bad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Completeness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Completeness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#CompletenessResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#CompletenessResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Consistency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Consistency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#ConsistencyResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#ConsistencyResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Currentness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Currentness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#CurrentnessResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#CurrentnessResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#FormulaBasedMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#FormulaBasedMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#GSetObservations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#GSetObservations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentGranularity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#GUniqueObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#GUniqueObservation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentGranularity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Metric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Metric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#PathBasedMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#PathBasedMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Provenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Provenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#ProvenanceResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#ProvenanceResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityAssessmentProcess"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Relevancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Relevancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RelevancyResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RelevancyResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RepresentationalIndicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RepresentationalIndicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RepresentationalResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#RepresentationalResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Timeliness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#Timeliness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#QualityIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#TimelinessResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#TimelinessResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oamal/ontologies/2025/1/untitled-ontology-26#AssessmentResult"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
